@@ -2,13 +2,15 @@
   "name": "nim_job_app",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
+    "start": "nodemon server.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -17,5 +19,17 @@
     "@types/react-dom": "^18.0.7",
     "@vitejs/plugin-react": "^2.2.0",
     "vite": "^3.2.0"
-  }
+  },
+  "description": "* npm create vite@latest *",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eze1er/nimjobapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eze1er/nimjobapp/issues"
+  },
+  "homepage": "https://github.com/eze1er/nimjobapp#readme"
 }

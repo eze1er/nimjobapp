@@ -1,4 +1,10 @@
 ## PROJECT NAME: NIM_JOB_APP
 
 * npm create vite@latest
-* 
+* npm init
+* npm install express nodemon
+
+error on type:
+
+### You are using require in a Node.js environment
+In this case, check your package.json file for an property called type. If that is set to module, ES6 modules will be enabled and you will run into the error mentioned above (specifically ReferenceError: require is not defined in ES module scope, you can use import instead). Simply remove that entry and you will be able to use require.
