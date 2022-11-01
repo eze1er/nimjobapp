@@ -4,9 +4,11 @@ require('dotenv/config')
 const app = express();
 
 // Middleware
-app.use("/skills", () => {
-  console.log("this is the middleware running when we hit Skills");
-});
+const skillsRoute = require('./routes/skills')
+const usersRoute = require('./routes/users')
+
+app.use('/skills', skillsRoute)
+app.use('/users', usersRoute)
 
 // this the middleware for authentication
 // app.use(auth)
@@ -15,10 +17,6 @@ app.use("/skills", () => {
 app.get("/", (req, res) => {
   res.send("We are on Home");
 });
-
-// app.get("/skills", (req, res) => {
-//   res.send("We are on Skills");
-// });
 
 // Connect to mongoDB
 mongoose.connect(
