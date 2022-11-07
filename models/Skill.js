@@ -8,7 +8,10 @@ const SkillSchema = mongoose.Schema({
   category: String,
   skills: [{ first_skill: String }, { second_skill: String }],
   candidate_nbr: Number,
-  // create_at: Date.now,
+  create_at: {
+    type: Date,
+    required: true
+  },
   experience: String,
   level: String,
   address: {
