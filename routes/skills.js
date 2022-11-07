@@ -1,13 +1,13 @@
 const express = require('express')
 
 const router = express.Router();
-const Skills = require('../models/Skills')
+const Skills = require('../models/Skill')
 
 router.get('/', (req, res) => {
   res.send("We are in skills on router")
 })
 
-router.skills('/', (req, res) => {
+router.post('/', (req, res) => {
   console.log(req.body);
 })
 
