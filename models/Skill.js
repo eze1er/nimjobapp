@@ -10,7 +10,7 @@ const SkillSchema = mongoose.Schema({
   candidate_nbr: Number,
   create_at: {
     type: Date,
-    required: true
+    default: Date.now
   },
   experience: String,
   level: String,
@@ -25,4 +25,7 @@ const SkillSchema = mongoose.Schema({
   status_code: String,
 });
 
+const UsersSchema = mongoose.Schema({
+
+})
 module.exports = mongoose.model("Skills", SkillSchema);
