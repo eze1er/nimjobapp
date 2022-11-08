@@ -26,6 +26,8 @@ const SkillSchema = mongoose.Schema({
 });
 
 const UsersSchema = mongoose.Schema({
-
+  userEmail: {
+    type: String
+  }
 })
 module.exports = mongoose.model("Skills", SkillSchema);
